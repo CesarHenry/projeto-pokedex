@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Pokedex</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/reset.css">
+  <link rel="stylesheet" href="style/global.css">
+  <link rel="stylesheet" href="style/responsivo.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Karla:wght@400;600&family=Playfair+Display&family=Playfair+Display+SC&display=swap" rel="stylesheet">  
+</head>
+<body>
+  <div class="build">
+    <header class="header">
+        <a href="index.html" class="logo"><img src="assets/Logo.svg" alt="Logo Pokemon"></a>
+        <a class="burger__btn" href="#"><img src="assets/BurgenBtn.svg" alt="Menu Mobile"></a>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pokedex.html">Pokédex</a></li>
+          <li><a href="#">Lendários</a></li>
+          <li><a href="#">Documentação</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div class="menu__mobile">
+      <div class="menu__close">       
+        <a href="#">X</a>
+      </div>
+      <a class="logo__mobile" href="#"><img src="assets/Logo_mobile.svg" alt="Logo Mobile"></a>
+      <div class="links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pokedex.html">Pokédex</a></li>
+          <li><a href="#">Legendaries</a></li>
+          <li><a href="#">Documentation</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="main__content">
+        <h1><span>Encontre</span> todos seus <span>Pokemons</span> favoritos</h1>
+        <p>
+          Você pode conhecer o tipo de pokemon, seus pontos fortes, desvantagens e habilidades
+        </p>
+        <a href="pokedex.html" class="btn">Ver pokemons</a>
+      </div>
+    </main>
+
+    <aside class="banner">
+      <img class="banner__tablet" src="assets/BannerComplete.svg" alt="Imagem Pokemon Tablet">
+      <img class="banner__full" src="assets/banner.svg" alt="Imagem Pokemon">
+    </aside>
+
+    <footer class="footer">
+      <p>Make with for the PokéSpartans team Platzi Master</p>
+      <p>Ours Team</p>
+    </footer>
+  </div>
+
+  <script type="module" src="js/modules/script.js"></script>
+</body>
+</html>

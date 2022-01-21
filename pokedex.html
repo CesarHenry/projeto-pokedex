@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Pokedex</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/pokedex.css" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/responsivo.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Karla:wght@400;600&family=Playfair+Display&family=Playfair+Display+SC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="build__pokedex">
+      <header class="header">
+        <a href="index.html" class="logo"
+          ><img src="assets/Logo.svg" alt="Logo Pokemon"
+        /></a>
+        <a class="burger__btn" href="#"
+          ><img src="assets/BurgenBtn.svg" alt="Menu Mobile"
+        /></a>
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pokedex.html">Pokédex</a></li>
+            <li><a href="#">Lendários</a></li>
+            <li><a href="#">Documentação</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="menu__mobile">
+        <div class="menu__close">
+          <a href="#">X</a>
+        </div>
+        <a class="logo__mobile" href="#"
+          ><img src="assets/Logo_mobile.svg" alt="Logo Mobile"
+        /></a>
+        <div class="links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pokedex.html">Pokédex</a></li>
+            <li><a href="#">Legendaries</a></li>
+            <li><a href="#">Documentation</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="input__pokemon">
+        <div class="input__content">
+          <h1>800 <span>Pokemons</span> for you choose your favorite</h1>
+          <input
+            type="text"
+            id="buscapokemon"
+            class="buscapokemon"
+            placeholder="   Encontreu seu Pokemon.."
+          />
+        </div>
+        <div class="options__content">
+          <select name="tipo" id="tipo">
+            <option value="">Tipo</option>
+            <option value="fogo">Fogo</option>
+            <option value="normal">Normal</option>
+            <option value="eletrico">Elétrico</option>
+            <option value="agua">Água</option>
+          </select>
+
+          <select name="ataque" id="ataque">
+            <option value="ataque">Ataque</option>
+          </select>
+
+          <select name="experiencia" id="experiencia">
+            <option value="exp">Experiência</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="cards">
+        <div class="card__pokemon">
+          <div class="card__content">
+            <h1 class="name"></h1>
+            <ul class="quadrado">
+              <li class="type"></li>              
+              <li class="ability"></li>
+            </ul>
+          </div>
+          <div class="card__background" data-background>
+            <div class="card__img">
+              <img src="" alt="Imagem Pokemon" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card__pokemon">
+          <div class="card__content">
+            <h1 class="name"></h1>
+            <ul class="quadrado">
+              <li class="type_1"></li>
+              <li class="type_2"></li>
+              <li class="ability_1"></li>
+            </ul>
+          </div>
+          <div class="card__background" data-background>
+            <div class="card__img">
+              <img src="" alt="Imagem Pokemon" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card__pokemon">
+          <div class="card__content">
+            <h1 class="name"></h1>
+            <ul class="quadrado">
+              <li class="type_1"></li>
+              <li class="type_2"></li>
+              <li class="ability_1"></li>
+            </ul>
+          </div>
+          <div class="card__background" data-background>
+            <div class="card__img">
+              <img src="" alt="Imagem Pokemon" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card__pokemon">
+          <div class="card__content">
+            <h1 class="name"></h1>
+            <ul class="quadrado">
+              <li class="type_1"></li>
+              <li class="type_2"></li>
+              <li class="ability_1"></li>
+            </ul>
+          </div>
+          <div class="card__background" data-background>
+            <div class="card__img">
+              <img src="" alt="Imagem Pokemon" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card__pokemon">
+          <div class="card__content">
+            <h1 class="name"></h1>
+            <ul class="quadrado">
+              <li class="type_1"></li>
+              <li class="type_2"></li>
+              <li class="ability_1"></li>
+            </ul>
+          </div>
+          <div class="card__background" data-background>
+            <div class="card__img">
+              <img src="" alt="Imagem Pokemon" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card__pokemon">
+          <div class="card__content">
+            <h1 class="name"></h1>
+            <ul class="quadrado">
+              <li class="type_1"></li>
+              <li class="type_2"></li>
+              <li class="ability_1"></li>
+            </ul>
+          </div>
+          <div class="card__background" data-background>
+            <div class="card__img">
+              <img src="" alt="Imagem Pokemon" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>Make with for the PokéSpartans team Platzi Master</p>
+        <p>Ours Team</p>
+      </footer>
+    </div>
+
+    <script type="module" src="js/modules/script.js"></script>
+  </body>
+</html>

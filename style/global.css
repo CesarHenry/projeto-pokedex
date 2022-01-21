@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+:root {
+  --font-family: 'Karla', sans-serif;
+  --color01: #FFF;
+  --color02: #000;
+  --color03: #F5DB13;
+  --color04: #73D677;
+  --color05: linear-gradient(to bottom, #F2B807, #F5DB13, #F2B807);
+  --color06: #F2F2F2;
+  --color_card_red: rgba(180, 52, 40, 0.75);   
+}
+
+body {
+  font-family: var(--font-family);
+  width: 100%;
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* INDEX */
+
+.build {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "header header" 
+  "main banner"
+  "footer footer"
+  ;
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.banner {
+  grid-area: banner;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+@media (max-width: 1200px) {
+
+  .build {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main banner"
+    "footer footer";
+  }
+}
+
+@media (max-width: 760px) {
+
+  .build {
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "banner"
+    "main"
+    "footer";
+  }
+}
+
+/* POKEDEX */
+.build__pokedex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "header header header"
+  "input__pokemon input__pokemon input__pokemon"
+  "cards cards cards"
+  "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.input__pokemon {
+  grid-area: input__pokemon;
+}
+
+.cards {
+  grid-area: cards;
+}
+
+.footer {
+  grid-area: footer;
+}
+
