@@ -1,2 +1,3 @@
 # projeto-pokedex
- Criação de um web site do Pokemon com french de uma API
+ Criação de um web site do Pokemon consumindo uma API com fetch.
+
