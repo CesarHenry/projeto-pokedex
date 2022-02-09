@@ -23,12 +23,29 @@
       function handleChange(event) {
         event.preventDefault();
         const pokemon = event.target.value;
+        const name = event.target.value; 
         buscaPokemon(pokemon);
+        saveValuesChange(name, pokemon); 
+      }
+
+      function getValueLocalStorage() {
+        const properties = Object.keys(localStorage);        
+        const responseValue = fetch(`${baseUrl}/pokemon/${properties}`)
+        responseValue.then(r => r.json())
+        .then(body => {
+          namePokemon.innerText = responseValue.name;
+          // typePokemon.innerText = responseValue.types[0]?.type.name;
+          // imgPokemon.src = responseValue.sprites.front_default;
+        })                          
+      }
+      getValueLocalStorage();     
+        
+      function saveValuesChange(name, pokemon){
+        localStorage[name] = pokemon;
       }
     
       function setPokemon(response) {
-        const getType = response.types[0]?.type.name;
-        console.log(response)
+        const getType = response.types[0]?.type.name; 
     
         namePokemon.innerText = response.name;
         typePokemon.innerText = response.types[0]?.type.name;
@@ -36,17 +53,16 @@
         response.abilities.forEach((item) => {
           // abilityPokemon.innerHTML = `<li>${item.ability.name}</li>`;
           abilityPokemon.innerText = item.ability.name;
-        });
-    
+        });                    
         getBackgroundColor(getType);
       }
     
       async function buscaPokemon(pokemon) {
-        const response = await getPokemon(pokemon);
+        const response = await getPokemon(pokemon);        
         setPokemon(response);
       }
     }    
-    getCardOne();   
-}
+    getCardOne();
 
+  }
   
